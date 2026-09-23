@@ -4,32 +4,22 @@
 
 <div align="center">
 
-  <!-- TOP ANIMATED MULTI-GRADIENT CYBER BANNER -->
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=250&color=gradient&customColorList=12,20,24,28&text=Samragyi%20Sharma&fontSize=52&fontColor=ffffff&fontAlignY=35&desc=AI%20Engineer%20%E2%80%A2%20RAG%20Architect%20%E2%80%A2%20Full-Stack%20Innovator&descAlignY=55&descSize=20&animation=twinkling" alt="Samragyi Sharma Banner" />
+  <!-- TOP ANIMATED GRADIENT CYBER BANNER -->
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=12,20,24,28&text=Samragyi%20Sharma&fontSize=48&fontColor=ffffff&fontAlignY=36&desc=AI%20Engineer%20%7C%20RAG%20Architect%20%7C%20Full-Stack%20Developer&descAlignY=58&descSize=18&animation=twinkling" alt="Samragyi Sharma Banner" />
 
-  <!-- DYNAMIC NEON TYPING SVG -->
-  <a href="https://github.com/samragyi22">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=C084FC&background=00000000&center=true&vCenter=true&multiline=true&width=780&height=100&lines=%E2%9A%A1+Building+Autonomous+AI+Agents+%26+RAG+Systems;%F0%9F%9B%A1%EF%B8%8F+Architecting+Hallucination-Free+Enterprise+Intelligence;%F0%9F%94%A5+Shipping+Production-Ready+AI+Products+from+FinTech+to+Career;%F0%9F%92%BB+Full-Stack+Web+Developer+%7C+Competitive+Programmer" alt="Animated Typing Header" />
-  </a>
-
-  <!-- FLOATING STATUS BADGE TICKER -->
+  <!-- DYNAMIC NEON TYPING SVG (SMOOTH & CLEAN SINGLE-LINE ROTATION) -->
   <p align="center">
-    <a href="https://www.linkedin.com/in/samragyi-sharma-1b1082315/" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <a href="https://github.com/samragyi22">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=1000&color=C084FC&background=00000000&center=true&vCenter=true&width=680&height=40&lines=%E2%9A%A1+Building+Autonomous+AI+Agents+%26+RAG+Pipelines;%F0%9F%9B%A1%EF%B8%8F+Architecting+Zero-Hallucination+Intelligence;%F0%9F%94%A5+Shipping+Production+AI+Products+from+FinTech+to+Career;%F0%9F%92%BB+Full-Stack+Architect+%E2%80%A2+React+19%2C+FastAPI%2C+LangGraph" alt="Animated Typing Header" />
     </a>
-    &nbsp;
-    <a href="https://leetcode.com/u/samragyi_22/" target="_blank">
-      <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-    </a>
-    &nbsp;
-    <a href="https://enterprise-ai-analyst.onrender.com" target="_blank">
-      <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Live_Demo-PALADIN_AI-9333EA?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" />
-    </a>
-    &nbsp;
-    <a href="mailto:samragyisharma.2226@gmail.com">
-      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-    </a>
-    &nbsp;
+  </p>
+
+  <!-- QUICK ACTION & SOCIAL BADGES -->
+  <p align="center">
+    <a href="https://www.linkedin.com/in/samragyi-sharma-1b1082315/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+    <a href="https://leetcode.com/u/samragyi_22/" target="_blank"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+    <a href="https://enterprise-ai-analyst.onrender.com" target="_blank"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20Live_Demo-PALADIN_AI-9333EA?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" /></a>
+    <a href="mailto:samragyisharma.2226@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
     <img src="https://komarev.com/ghpvc/?username=samragyi22&label=%E2%9C%A8%20Profile%20Views&color=9333ea&style=for-the-badge" alt="Profile views" />
   </p>
 
