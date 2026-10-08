@@ -31,12 +31,9 @@ CSS = """
       --bd:#DFE6F2;--bdc:#D9E2F0;--rule:#E6ECF6;--grid:#EFF4FB;--hair:#ECF0F7;
       --tx:#0A1020;--body:#46556F;--chiptx:#33435E;--mut:#68768F;--dim:#9AA8BF;
       --acc:#1668E3;--acc2:#D81E36;--acc3:#3F77DE;--ok:#0E9F6E;--glow:0.07;--sweep:0.16;--sweep2:0.10}
-  @media (prefers-color-scheme:dark){
-    svg{--bg:#070B16;--card:#0B1222;--chip:#0C1426;--code:#080D1A;--band:#060A13;
-        --bd:#1B2B45;--bdc:#1E3151;--rule:#15223A;--grid:#0F1829;--hair:#101B2E;
-        --tx:#F5F7FA;--body:#A9B6CC;--chiptx:#C3CEE2;--mut:#55657F;--dim:#2E3F5F;
-        --acc:#247BFF;--acc2:#FF354F;--acc3:#5B8BFF;--ok:#2BD67B;--glow:0.16;--sweep:0.26;--sweep2:0.16}
-  }
+  /* Light only, by request. To make it follow the viewer's system theme again,
+     re-add a @media (prefers-color-scheme:dark) block that redefines these same
+     tokens -- nothing else in the file references a literal hex. */
   .f-tx{fill:var(--tx)}.f-body{fill:var(--body)}.f-chip{fill:var(--chiptx)}
   .f-mut{fill:var(--mut)}.f-dim{fill:var(--dim)}.f-acc{fill:var(--acc)}
   .f-acc2{fill:var(--acc2)}.f-acc3{fill:var(--acc3)}.f-ok{fill:var(--ok)}
@@ -45,8 +42,10 @@ CSS = """
   .sf-chip{fill:var(--chip);stroke:var(--bdc)}
   .sf-code{fill:var(--code);stroke:var(--bd)}
   .st-rule{stroke:var(--rule);fill:none}.st-hair{stroke:var(--hair);fill:none}
-  .st-bd{stroke:var(--bd);fill:none}.st-dim{stroke:var(--dim);fill:none}
+  .st-bd{stroke:var(--bd);fill:none}.st-acc{stroke:var(--acc);fill:none}
+  .st-dim{stroke:var(--dim);fill:none}
   .st-grid{stroke:var(--grid);fill:none}
+  .cursor{fill:var(--card);stroke:var(--acc);stroke-width:1.2;stroke-linejoin:round}
   .gs-acc{stop-color:var(--acc)}.gs-acc2{stop-color:var(--acc2)}
   .glow-a{fill:url(#gA)}.glow-b{fill:url(#gB)}
   .fade{animation:fade .6s ease-out backwards}
@@ -67,7 +66,6 @@ CSS = """
   @keyframes sweep{0%{opacity:0;transform:translateX(-260px)}6%,44%{opacity:1}52%,100%{opacity:0;transform:translateX(900px)}}
   @keyframes scan{0%{opacity:0;transform:translateX(-10px)}8%,44%{opacity:.8}52%,100%{opacity:0;transform:translateX(830px)}}
   @keyframes bob{0%,100%{transform:translate(0,0)}50%{transform:translate(-5px,8px)}}
-  .fb{transform-box:fill-box}
   .dot{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-in-out infinite}
   .halo{transform-box:fill-box;transform-origin:center;animation:halo 2.6s ease-out 1.6s infinite}
   .orb{transform-box:fill-box;transform-origin:center;animation:spin 70s linear infinite}
@@ -128,14 +126,13 @@ def sec_hero(b64):
              + T(44, 42, "&gt; Building AI products for a better tomorrow...", "m f-body", 11)
              + '<g class="cover2"><rect class="sf-band" x="50" y="30" width="320" height="16"/>'
                '<rect class="caret f-acc" x="50" y="30" width="7" height="15"/></g></g>')
-    # nav pills
-    nav = [("/ about", 68), ("/ projects", 87), ("/ experience", 100), ("/ skills", 74), ("/ connect", 81)]
-    x = 836 - (sum(w for _, w in nav) + 8 * (len(nav) - 1))
-    for i, (lab, w) in enumerate(nav):
-        o.append(f'<g class="rise" style="animation-delay:{0.5+i*0.07:.2f}s">'
-                 f'<rect class="sf-chip" x="{x}" y="16" width="{w}" height="24" rx="12"/>'
-                 + T(x + w/2, 32, lab, "m f-mut", 9.5, anchor="middle", ls="0.8") + '</g>')
-        x += w + 8
+    # terminal window chrome (decorative -- deliberately not tab-shaped, since an
+    # SVG rendered through <img> can never carry clickable regions)
+    o.append('<g class="fade" style="animation-delay:.5s">'
+             '<circle class="f-acc2" cx="700" cy="28" r="3.4" opacity="0.75"/>'
+             '<circle class="f-dim" cx="712" cy="28" r="3.4"/>'
+             '<circle class="f-dim" cx="724" cy="28" r="3.4"/>'
+             + T(836, 32, "samragyi22 — zsh", "m f-mut", 9.5, anchor="end", ls="0.6") + '</g>')
     # portrait
     o.append('<g class="rise" style="animation-delay:.15s">'
              '<rect class="pglow" x="40" y="74" width="268" height="248" rx="16" fill="none" '
@@ -414,8 +411,7 @@ def sec_connect():
     o = [header(36, "CONNECT", "LET&apos;S WORK TOGETHER"),
          '<path class="trail st-acc" d="M700 44q46 14 70 46" stroke-width="1.2" stroke-dasharray="3 6"/>',
          '<g transform="translate(772,46) scale(1.45)"><g class="bob">'
-         '<path class="sf-card" d="M0 0 L0 19 L5 14.6 L8.3 22 L12 20.3 L8.7 13.2 L14.6 12.9 Z" '
-         'stroke="var(--acc)" stroke-width="1.2" stroke-linejoin="round"/></g></g>',
+         '<path class="cursor" d="M0 0 L0 19 L5 14.6 L8.3 22 L12 20.3 L8.7 13.2 L14.6 12.9 Z"/></g></g>',
          T(44, 84, "LET&apos;S BUILD SOMETHING.", "d f-tx rise", 30, weight="800", ls="0.6",
            extra=' style="animation-delay:.08s"'),
          T(44, 106, "Open to software engineering and AI engineering opportunities — links below.",

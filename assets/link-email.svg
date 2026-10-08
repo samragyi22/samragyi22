@@ -7,12 +7,9 @@
       --bd:#DFE6F2;--bdc:#D9E2F0;--rule:#E6ECF6;--grid:#EFF4FB;--hair:#ECF0F7;
       --tx:#0A1020;--body:#46556F;--chiptx:#33435E;--mut:#68768F;--dim:#9AA8BF;
       --acc:#1668E3;--acc2:#D81E36;--acc3:#3F77DE;--ok:#0E9F6E;--glow:0.07;--sweep:0.16;--sweep2:0.10}
-  @media (prefers-color-scheme:dark){
-    svg{--bg:#070B16;--card:#0B1222;--chip:#0C1426;--code:#080D1A;--band:#060A13;
-        --bd:#1B2B45;--bdc:#1E3151;--rule:#15223A;--grid:#0F1829;--hair:#101B2E;
-        --tx:#F5F7FA;--body:#A9B6CC;--chiptx:#C3CEE2;--mut:#55657F;--dim:#2E3F5F;
-        --acc:#247BFF;--acc2:#FF354F;--acc3:#5B8BFF;--ok:#2BD67B;--glow:0.16;--sweep:0.26;--sweep2:0.16}
-  }
+  /* Light only, by request. To make it follow the viewer's system theme again,
+     re-add a @media (prefers-color-scheme:dark) block that redefines these same
+     tokens -- nothing else in the file references a literal hex. */
   .f-tx{fill:var(--tx)}.f-body{fill:var(--body)}.f-chip{fill:var(--chiptx)}
   .f-mut{fill:var(--mut)}.f-dim{fill:var(--dim)}.f-acc{fill:var(--acc)}
   .f-acc2{fill:var(--acc2)}.f-acc3{fill:var(--acc3)}.f-ok{fill:var(--ok)}
@@ -21,8 +18,10 @@
   .sf-chip{fill:var(--chip);stroke:var(--bdc)}
   .sf-code{fill:var(--code);stroke:var(--bd)}
   .st-rule{stroke:var(--rule);fill:none}.st-hair{stroke:var(--hair);fill:none}
-  .st-bd{stroke:var(--bd);fill:none}.st-dim{stroke:var(--dim);fill:none}
+  .st-bd{stroke:var(--bd);fill:none}.st-acc{stroke:var(--acc);fill:none}
+  .st-dim{stroke:var(--dim);fill:none}
   .st-grid{stroke:var(--grid);fill:none}
+  .cursor{fill:var(--card);stroke:var(--acc);stroke-width:1.2;stroke-linejoin:round}
   .gs-acc{stop-color:var(--acc)}.gs-acc2{stop-color:var(--acc2)}
   .glow-a{fill:url(#gA)}.glow-b{fill:url(#gB)}
   .fade{animation:fade .6s ease-out backwards}
@@ -43,7 +42,6 @@
   @keyframes sweep{0%{opacity:0;transform:translateX(-260px)}6%,44%{opacity:1}52%,100%{opacity:0;transform:translateX(900px)}}
   @keyframes scan{0%{opacity:0;transform:translateX(-10px)}8%,44%{opacity:.8}52%,100%{opacity:0;transform:translateX(830px)}}
   @keyframes bob{0%,100%{transform:translate(0,0)}50%{transform:translate(-5px,8px)}}
-  .fb{transform-box:fill-box}
   .dot{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-in-out infinite}
   .halo{transform-box:fill-box;transform-origin:center;animation:halo 2.6s ease-out 1.6s infinite}
   .orb{transform-box:fill-box;transform-origin:center;animation:spin 70s linear infinite}

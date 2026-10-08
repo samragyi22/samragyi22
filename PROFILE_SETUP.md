@@ -43,21 +43,21 @@ python3 build_profile.py      # needs Pillow: pip3 install Pillow
 
 ## 2. Theme
 
-The SVG is **theme-adaptive**. Light is the base; a `prefers-color-scheme: dark` block
-re-skins every surface through CSS custom properties:
+The profile is **light only**, by request. Colours are CSS custom properties defined once
+in the `CSS` string in `build_profile.py`:
 
-| token | light | dark |
+| token | value | role |
 | :--- | :--- | :--- |
-| `--bg` page | `#FFFFFF` | `#070B16` |
-| `--card` | `#F8FAFE` | `#0B1222` |
-| `--chip` | `#F2F6FD` | `#0C1426` |
-| `--code` code card | `#F4F8FD` | `#080D1A` |
-| `--bd` border | `#DFE6F2` | `#1B2B45` |
-| `--tx` primary text | `#0A1020` | `#F5F7FA` |
-| `--body` | `#46556F` | `#A9B6CC` |
-| `--mut` muted | `#68768F` | `#55657F` |
-| `--acc` blue | `#1668E3` | `#247BFF` |
-| `--acc2` red | `#D81E36` | `#FF354F` |
+| `--bg` | `#FFFFFF` | page — matches GitHub's light README background exactly |
+| `--card` | `#F8FAFE` | card fill |
+| `--chip` | `#F2F6FD` | chip fill |
+| `--code` | `#F4F8FD` | code card |
+| `--bd` | `#DFE6F2` | border |
+| `--tx` | `#0A1020` | primary text |
+| `--body` | `#46556F` | body text |
+| `--mut` | `#68768F` | muted labels |
+| `--acc` | `#1668E3` | accent blue |
+| `--acc2` | `#D81E36` | accent red |
 
 To change a colour, edit the `CSS` string near the top of `build_profile.py` and rebuild.
 Both palettes are defined in one place; nothing else references a literal hex except the
@@ -67,10 +67,11 @@ The light accents are deepened versions of the `#247BFF` / `#FF354F` brand pair 
 clears WCAG AA 4.5:1 on white: primary 18.9:1, body 7.5:1, chip 10.0:1, muted 4.6:1,
 accents 5.1:1.
 
-> `prefers-color-scheme` follows the viewer's **OS/browser** setting, not GitHub's own theme
-> dropdown. If someone sets GitHub to dark while their OS is light they will see the light
-> version. That is the same limitation GitHub's documented `<picture>` theme-switching has —
-> there is no signal an image can read for the site-level toggle.
+There is **no dark variant**. On GitHub's dark theme the profile reads as a light dashboard
+card on a dark page. To make it follow the viewer's system theme instead, re-add a
+`@media (prefers-color-scheme: dark)` block redefining these same tokens — the commented
+placeholder sits right where it goes in `build_profile.py`, and nothing else in the file
+references a literal hex.
 
 ---
 
@@ -81,9 +82,10 @@ Clicking anywhere inside `profile.svg` does nothing — it is an image. The real
 - the four **link cards** under it (GitHub, LeetCode, Email, Portfolio)
 - the text row below that (SCORIK repo, Repositories, Contribution activity)
 
-The `/ about  / projects  / experience  / skills  / connect` pills in the hero are
-**decorative section labels**, not navigation. They cannot be links — there is no image-map
-equivalent that survives GitHub's sanitiser.
+The hero's top-right is **terminal window chrome** (three dots + `samragyi22 — zsh`). It
+replaced a row of `/ about  / projects  / ...` tab pills, which looked like navigation but
+could never be clicked — an SVG rendered through `<img>` has no image-map equivalent that
+survives GitHub's sanitiser. Nothing in the design now invites a click that does not work.
 
 ### Adding LinkedIn as a fifth card
 
