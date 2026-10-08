@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 116" width="880" height="116" role="img" aria-labelledby="t d">
+<title id="t">Impact metrics</title>
+<desc id="d">50 plus engineering tickets resolved. Checkout conversion rate 3.2 percent, up from 1.5 percent. API response time under 200 milliseconds, down from 500 milliseconds. 95 percent ATS pass rate on resume analysis. Top 1,500 of 50,000 plus students in Google The Big Code 2026.</desc>
+<defs><pattern id="gridM" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#0F1829" stroke-width="1"/></pattern></defs>
+<style>.mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}.disp{font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",Roboto,sans-serif}.fade{animation:fade .6s ease-out backwards}.rise{animation:rise .7s cubic-bezier(.2,.7,.3,1) backwards}@keyframes fade{from{opacity:0}}@keyframes rise{from{opacity:0;transform:translateY(10px)}}@media (prefers-reduced-motion:reduce){.fade,.rise{animation:none}}</style>
+<rect width="880" height="116" fill="#070B16"/><rect width="880" height="116" fill="url(#gridM)" opacity="0.75"/>
+<rect x="0" y="0" width="880" height="116" fill="none" stroke="#17233A"/>
+  <g class="rise" style="animation-delay:0.10s">
+    <rect x="44" y="18" width="152" height="80" rx="10" fill="#0B1222" stroke="#1B2B45"/>
+    <rect x="44" y="18" width="152" height="2.5" rx="1.2" fill="#247BFF" opacity="0.8"/>
+    <rect x="58" y="34" width="3" height="14" rx="1.5" fill="#247BFF"/>
+    <text class="disp" x="68" y="48" font-size="19" font-weight="800" letter-spacing="0.2" fill="#F5F7FA">50+</text>
+    <text class="mono" x="58" y="72" font-size="8.5" letter-spacing="0.5" fill="#C9D4E6">Engineering Tickets</text>
+    <text class="mono" x="58" y="85" font-size="8.5" letter-spacing="0.5" fill="#6A7A95">Resolved</text>
+  </g><g class="rise" style="animation-delay:0.18s">
+    <rect x="204" y="18" width="152" height="80" rx="10" fill="#0B1222" stroke="#1B2B45"/>
+    <rect x="204" y="18" width="152" height="2.5" rx="1.2" fill="#247BFF" opacity="0.8"/>
+    <rect x="218" y="34" width="3" height="14" rx="1.5" fill="#247BFF"/>
+    <text class="disp" x="228" y="48" font-size="19" font-weight="800" letter-spacing="0.2" fill="#F5F7FA">3.2%</text>
+    <text class="mono" x="218" y="72" font-size="8.5" letter-spacing="0.5" fill="#C9D4E6">Conversion Rate</text>
+    <text class="mono" x="218" y="85" font-size="8.5" letter-spacing="0.5" fill="#6A7A95">(1.5% &#8594; 3.2%)</text>
+  </g><g class="rise" style="animation-delay:0.26s">
+    <rect x="364" y="18" width="152" height="80" rx="10" fill="#0B1222" stroke="#1B2B45"/>
+    <rect x="364" y="18" width="152" height="2.5" rx="1.2" fill="#5B8BFF" opacity="0.8"/>
+    <rect x="378" y="34" width="3" height="14" rx="1.5" fill="#5B8BFF"/>
+    <text class="disp" x="388" y="48" font-size="19" font-weight="800" letter-spacing="0.2" fill="#F5F7FA">&lt;200ms</text>
+    <text class="mono" x="378" y="72" font-size="8.5" letter-spacing="0.5" fill="#C9D4E6">API Response Time</text>
+    <text class="mono" x="378" y="85" font-size="8.5" letter-spacing="0.5" fill="#6A7A95">(500ms &#8594; &lt;200ms)</text>
+  </g><g class="rise" style="animation-delay:0.34s">
+    <rect x="524" y="18" width="152" height="80" rx="10" fill="#0B1222" stroke="#1B2B45"/>
+    <rect x="524" y="18" width="152" height="2.5" rx="1.2" fill="#5B8BFF" opacity="0.8"/>
+    <rect x="538" y="34" width="3" height="14" rx="1.5" fill="#5B8BFF"/>
+    <text class="disp" x="548" y="48" font-size="19" font-weight="800" letter-spacing="0.2" fill="#F5F7FA">95%</text>
+    <text class="mono" x="538" y="72" font-size="8.5" letter-spacing="0.5" fill="#C9D4E6">ATS Pass Rate</text>
+    <text class="mono" x="538" y="85" font-size="8.5" letter-spacing="0.5" fill="#6A7A95">(Resume Analysis)</text>
+  </g><g class="rise" style="animation-delay:0.42s">
+    <rect x="684" y="18" width="152" height="80" rx="10" fill="#0B1222" stroke="#1B2B45"/>
+    <rect x="684" y="18" width="152" height="2.5" rx="1.2" fill="#FF354F" opacity="0.8"/>
+    <rect x="698" y="34" width="3" height="14" rx="1.5" fill="#FF354F"/>
+    <text class="disp" x="708" y="48" font-size="19" font-weight="800" letter-spacing="0.2" fill="#F5F7FA">Top 1,500</text>
+    <text class="mono" x="698" y="72" font-size="8.5" letter-spacing="0.5" fill="#C9D4E6">Google Big Code 2026</text>
+    <text class="mono" x="698" y="85" font-size="8.5" letter-spacing="0.5" fill="#6A7A95">(50,000+ students)</text>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300" role="img" aria-labelledby="t d">
+<title id="t">Experience</title>
+<desc id="d">Software Engineer Intern at Eternz, an e-commerce marketplace, May 2026 to September 2026: resolved 45 plus engineering tickets across frontend and backend as a forward-deployed engineer; built the wallet module and shipped a new checkout feature taking conversion from 1.5 to 3.2 percent, a 113 percent increase; shipped bug fixes, performance optimizations and DB query caching to production. AI and Full-stack Engineer Intern at KalviumLabs, September 2025 to May 2026: built an AI-powered FinTech analytics platform on Next.js 16, Claude Haiku 4.5 and an isolated MCP server; enabled natural-language queries with autonomous tool calling, streaming responses, SQL and Python analysis and PDF export; delivered production-ready MERN and PostgreSQL applications and scalable REST APIs; reduced response times from about 500 to under 200 milliseconds through indexing.</desc>
+<defs>
+  <linearGradient id="hgE" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#247BFF"/><stop offset="1" stop-color="#FF354F"/></linearGradient>
+  <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#247BFF"/><stop offset="1" stop-color="#FF354F"/></linearGradient>
+  <pattern id="gridE" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#0F1829" stroke-width="1"/></pattern>
+</defs>
+<style>.mono{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace}.disp{font-family:"Helvetica Neue",Helvetica,Arial,"Segoe UI",Roboto,sans-serif}.fade{animation:fade .6s ease-out backwards}.rise{animation:rise .7s cubic-bezier(.2,.7,.3,1) backwards}@keyframes fade{from{opacity:0}}@keyframes rise{from{opacity:0;transform:translateY(10px)}}
+  @keyframes draw{from{stroke-dashoffset:210}}
+  .spine{stroke-dasharray:210;stroke-dashoffset:0;animation:draw 1.4s ease-out .2s backwards}
+  @media (prefers-reduced-motion:reduce){.fade,.rise,.spine{animation:none}}
+</style>
+<rect width="880" height="300" fill="#070B16"/><rect width="880" height="300" fill="url(#gridE)" opacity="0.75"/>
+<rect x="0" y="0" width="880" height="300" fill="none" stroke="#17233A"/>
+<g class="fade">
+  <rect x="44" y="30" width="3" height="16" fill="url(#hgE)"/>
+  <text class="mono" x="58" y="43" font-size="13" letter-spacing="3.2" font-weight="700" fill="#F5F7FA">EXPERIENCE</text>
+  <text class="mono" x="836" y="43" font-size="10" letter-spacing="2" fill="#44557A" text-anchor="end">SHIPPED TO PRODUCTION</text>
+</g>
+<path class="spine" d="M70 76V286" stroke="url(#spine)" stroke-width="1.5" opacity="0.5"/>
+<g class="rise" style="animation-delay:0.15s">
+    <circle cx="70" cy="86" r="11" fill="#0B1222" stroke="#247BFF" stroke-width="2"/>
+    <text class="mono" x="70" y="90" font-size="10" font-weight="700" fill="#247BFF" text-anchor="middle">E</text>
+    <text class="mono" x="96" y="82" font-size="12" font-weight="700" fill="#F5F7FA">Software Engineer Intern</text>
+    <text class="mono" x="96" y="99" font-size="10"><tspan fill="#247BFF">Eternz</tspan><tspan fill="#55657F">  ·  E-commerce Marketplace</tspan></text>
+    <text class="mono" x="836" y="82" font-size="9.5" letter-spacing="0.6" fill="#55657F" text-anchor="end">May 2026 – Sep 2026</text>
+    <circle cx="102" cy="112" r="1.8" fill="#247BFF" opacity="0.8"/><text class="mono" x="112" y="116" font-size="9.5" fill="#A9B6CC">Resolved 45+ engineering tickets across frontend and backend as a forward-deployed engineer.</text><circle cx="102" cy="127" r="1.8" fill="#247BFF" opacity="0.8"/><text class="mono" x="112" y="131" font-size="9.5" fill="#A9B6CC">Built the wallet module and shipped a new checkout feature — conversion 1.5% &#8594; 3.2% (113% increase).</text><circle cx="102" cy="142" r="1.8" fill="#247BFF" opacity="0.8"/><text class="mono" x="112" y="146" font-size="9.5" fill="#A9B6CC">Shipped bug fixes, performance optimizations and DB query caching to production.</text>
+  </g><g class="rise" style="animation-delay:0.29s">
+    <circle cx="70" cy="196" r="11" fill="#0B1222" stroke="#FF354F" stroke-width="2"/>
+    <text class="mono" x="70" y="200" font-size="10" font-weight="700" fill="#FF354F" text-anchor="middle">K</text>
+    <text class="mono" x="96" y="192" font-size="12" font-weight="700" fill="#F5F7FA">AI / Full-stack Engineer Intern</text>
+    <text class="mono" x="96" y="209" font-size="10"><tspan fill="#FF354F">KalviumLabs</tspan><tspan fill="#55657F">  ·  AI · Full-Stack</tspan></text>
+    <text class="mono" x="836" y="192" font-size="9.5" letter-spacing="0.6" fill="#55657F" text-anchor="end">Sep 2025 – May 2026</text>
+    <circle cx="102" cy="222" r="1.8" fill="#FF354F" opacity="0.8"/><text class="mono" x="112" y="226" font-size="9.5" fill="#A9B6CC">Built an AI-powered FinTech analytics platform on Next.js 16, Claude Haiku 4.5 and an isolated MCP server.</text><circle cx="102" cy="237" r="1.8" fill="#FF354F" opacity="0.8"/><text class="mono" x="112" y="241" font-size="9.5" fill="#A9B6CC">Enabled natural-language queries with autonomous tool calling, streaming responses, SQL/Python analysis and PDF export.</text><circle cx="102" cy="252" r="1.8" fill="#FF354F" opacity="0.8"/><text class="mono" x="112" y="256" font-size="9.5" fill="#A9B6CC">Delivered production-ready MERN + PostgreSQL applications and scalable REST APIs.</text><circle cx="102" cy="267" r="1.8" fill="#FF354F" opacity="0.8"/><text class="mono" x="112" y="271" font-size="9.5" fill="#A9B6CC">Reduced response times from ~500ms to &lt;200ms through indexing.</text>
+  </g>
+</svg>
